@@ -11,6 +11,9 @@ public class IntroductionToSpringBoot1Application implements CommandLineRunner {
     @Autowired
     private Apple apple;
 
+    @Autowired
+    Pineapple pineapple;
+
 	public static void main(String[] args) {
 
 
@@ -21,6 +24,7 @@ public class IntroductionToSpringBoot1Application implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         apple.getApple();
+        pineapple.eatPineapple();
 
     }
 }
